@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>添加记录</h2>
+    <hr>
+    <form action="/account" method="post">
+        <label>事项</label><br>
+        <input type="text" name="title"><br>
+        <label>发生时间</label><br>
+        <input type="date" name="time"><br>
+        <label>类型</label><br>
+        <select name="type">
+            <option value="-1">支出</option>
+            <option value="1">收入</option>
+        </select><br>
+        <label>金额</label><br>
+        <input type="text" name="account"><br>
+
+        <label>备注</label><br>
+        <textarea name="remarks" cols="30" rows="5"></textarea>
+        <hr>
+        <button type="submit">添加</button>
+    </form>
+
+</body>
+
+</html>
